@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+/*
+Header 9rem
+chat 80rem
+footer 9rem
+margin interSection 1rem 
+*/
+
+body {
+  height: 100vh;
+  background-color: rgba(213, 213, 55, 0.501);
+}
+header {
+  height: 8vh;
+  display: flex;
+  justify-content: space-around;
+
+  margin-bottom: 1rem;
+}
+
+#chat {
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  margin-inline: 0.5rem;
+  padding-inline: 0.5rem;
+}
+
+.message {
+  background-color: rgb(183, 36, 36);
+  margin-block: 0.2rem;
+  /* margin-right: auto; */
+  width: 80%;
+  padding: 0.2rem;
+}
+
+.message.me {
+  background-color: rgb(76, 200, 57);
+  margin-left: auto;
+  position: relative;
+}
+
+.message .message_user {
+  font-size: 1rem;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.792);
+}
+
+.message .message_message {
+  font-size: 1rem;
+}
+
+.message .message_date {
+  font-size: 0.8rem;
+  color: grey;
+  margin-right: auto;
+}
+
+.sendContainer {
+  display: flex;
+  margin-top: auto;
+  margin-inline: none;
+  padding-inline: none;
+
+  justify-content: space-around;
+  height: 2rem;
+  width: 100%;
+  background-color: antiquewhite;
+}
+
+.sendContainer input {
+  border-radius: 15px;
+  border: none;
+}
+
+.sendContainer .inputMessage {
+  width: 80%;
+  padding-left: 0.5rem;
+}
+
+.sendContainer .sendMessage {
+  width: 15%;
+  /* background-color: red; */
+}

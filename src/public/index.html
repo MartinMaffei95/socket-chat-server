@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Socket</h1>
+      <input
+        type="text"
+        name="username"
+        id="username"
+        placeholder="Ingresa tu nombre"
+      />
+    </header>
+    <div class="container">
+      <div class="users">
+        <!-- <ul class="users_List">
+        users:
+        <li>User 1</li>
+        <li>User 1</li>
+        <li>User 1</li>
+      </ul> -->
+      </div>
+
+      <div id="chat">
+        <div class="allMesagges" id="allMessages"></div>
+        <div class="sendContainer">
+          <input
+            type="text"
+            name="write_message"
+            id="write_message"
+            placeholder="Ingresa tu mensaje"
+            class="inputMessage"
+          />
+          <input
+            type="button"
+            id="send_messageButton"
+            value="Enviar"
+            class="sendMessage"
+          />
+        </div>
+      </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
