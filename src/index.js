@@ -8,12 +8,7 @@ const cors = require('cors');
 const app = express();
 
 const server = http.createServer(app);
-const io = socketio(server, {
-  cors: {
-    origin: '*', //TEMP : Change for my domain
-    methods: ['GET', 'POST'],
-  },
-});
+const io = socketio(server);
 require('./socket')(io);
 
 app.set('port', 3005);
