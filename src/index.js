@@ -8,12 +8,7 @@ app.set('port', 3005);
 app.use(express.static(path.join(__dirname, 'public')));
 
 const server = http.createServer(app);
-const io = socketio(server, {
-  cors: {
-    origin: '*',
-    methods: ['GET', 'POST'],
-  },
-});
+const io = socketio(server);
 require('./socket')(io);
 app.use(cors());
 
