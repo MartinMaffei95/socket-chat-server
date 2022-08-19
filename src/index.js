@@ -15,6 +15,7 @@ const io = socketio(server, {
   },
 });
 require('./socket')(io);
+app.use(cors());
 
 server.listen(app.get('port'), () => {
   console.log('App run in port:' + app.get('port'));
